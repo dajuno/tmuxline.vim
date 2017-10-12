@@ -5,10 +5,10 @@ fun! tmuxline#presets#nightly_fox#get()
   call bar.right.add('z', '%H:%M')
 
   call bar.win.add('win.dim', '#I')
-  call bar.win.add('win', '#W')
+  call bar.win.add('win', '#W#F')
 
   call bar.cwin.add_left_sep()
-  call bar.cwin.add('cwin', '#W')
+  call bar.cwin.add('cwin', '#W#F')
   call bar.cwin.add_left_sep()
 
   let bar.options['status-justify'] = 'left'
